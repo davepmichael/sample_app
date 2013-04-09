@@ -18,4 +18,12 @@ describe "Help Page" do
 
   end
 end
-end
+
+  descirbe "About Page" do
+
+    it "should have the content 'About Us'" do
+      visit '/static_pages/about'
+      page.should have_content('About Us')
+    end
+        end
+  end
